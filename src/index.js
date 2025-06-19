@@ -21,30 +21,31 @@ const data = {
     { id: "Software" },
     { id: "Others" }
   ],
-  links: [
-    // Sources → Grant Funding
-    { source: "Government Industrial Strategy", target: "Grant Funding", value: 1400 },
-    { source: "Innovate UK", target: "Grant Funding", value: 910 },
-    { source: "ESA", target: "Grant Funding", value: 85 },
-    { source: "MoD", target: "Grant Funding", value: 50 },
-    { source: "NIHR", target: "Grant Funding", value: 50 },
+ links: [
+  // Funding sources → Grant Funding
+  { source: "Government Industrial Strategy", target: "Grant Funding", value: 1400 },
+  { source: "Innovate UK", target: "Grant Funding", value: 910 },
+  { source: "ESA", target: "Grant Funding", value: 85 },
+  { source: "MoD", target: "Grant Funding", value: 50 },
+  { source: "NIHR", target: "Grant Funding", value: 50 },
 
-    // Grant Funding → CapEx & R&D
-    { source: "Grant Funding", target: "CapEx", value: 1400 },
-    { source: "Grant Funding", target: "R&D", value: 1095 },
+  // Grant Funding → CapEx & R&D
+  { source: "Grant Funding", target: "CapEx", value: 1400 },
+  { source: "Grant Funding", target: "R&D", value: 1095 },
 
-    // CapEx → Sectors
-    { source: "CapEx", target: "Energy & Net Zero", value: 1325 },
-    { source: "CapEx", target: "Undefined CapEx", value: 350 },
-    { source: "CapEx", target: "Automotive & Manufacturing", value: 75 },
+  // CapEx → Sectors
+  { source: "CapEx", target: "Energy & Net Zero", value: 1325 },
+  { source: "CapEx", target: "Undefined CapEx", value: 350 },
+  { source: "CapEx", target: "Automotive & Manufacturing", value: 75 },
 
-    // R&D → Sectors
-    { source: "R&D", target: "Automotive & Manufacturing", value: 218 },
-    { source: "R&D", target: "Aerospace & Defence", value: 260 },
-    { source: "R&D", target: "Medical", value: 156 },
-    { source: "R&D", target: "Software", value: 74 },
-    { source: "R&D", target: "Others", value: 37 }
-  ]
+  // R&D → Sectors
+  { source: "R&D", target: "Energy & Net Zero", value: 75 }, // ✅ NEW
+  { source: "R&D", target: "Automotive & Manufacturing", value: 218 },
+  { source: "R&D", target: "Aerospace & Defence", value: 260 },
+  { source: "R&D", target: "Medical", value: 156 },
+  { source: "R&D", target: "Software", value: 74 },
+  { source: "R&D", target: "Others", value: 37 }
+]
 };
 
 const Chart = () => (
