@@ -52,7 +52,7 @@ const Chart = () => (
   <div style={{ height: "100vh", padding: "2rem", background: "#fff" }}>
     <ResponsiveSankey
       data={data}
-      margin={{ top: 40, right: 160, bottom: 40, left: 120 }}
+      margin={{ top: 40, right: 160, bottom: 40, left: 180 }}
       align="justify"
       colors={{ scheme: "category10" }}
       nodeOpacity={1}
